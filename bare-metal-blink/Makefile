@@ -1,6 +1,6 @@
-xMCU    = atmega328p
+MCU    = atmega328p
 F_CPU  = 16000000UL
-PORT   = tty.usbmodem11301%
+PORT   = /dev/cu.usbmodem11301
 
 CFLAGS = -mmcu=$(MCU) -DF_CPU=$(F_CPU) -Os -Wall -std=gnu99
 
